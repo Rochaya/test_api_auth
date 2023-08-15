@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .form-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+    height: 300px;
+  }
