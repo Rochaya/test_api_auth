@@ -11,7 +11,7 @@ export default function NavBar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/profil" className='text-white py-1 mx-1 sm:py-0'>
+                    <Link to="/register" className='text-white py-1 mx-1 sm:py-0'>
                         S'inscrire/Se connecter
                     </Link>
                 </li>

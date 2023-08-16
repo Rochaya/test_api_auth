@@ -6,27 +6,36 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-  }
+}
   
-  #root {
+#root {
     height: 100%;
-  }
+}
   
-  html,
-  body {
+html,
+body {
     height: 100%;
     min-height: 100vh;
     box-sizing: border-box;
+    background-color: rgb(13, 13, 13);
     margin: 0 auto;
     padding: 0;
     text-align: center;
-  }
+}
   
-  .form-signup {
+.form-signup {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: grey;
+    background-color: rgb(0, 137, 235);
     height: 300px;
-  }
+}
+
+label {
+    color: aliceblue;
+}
+
+button {
+  color: aliceblue;
+}

@@ -1,8 +1,8 @@
 import Cookies from 'js-cookie';
-import { React } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function SignUp() {
+export default function Register() {
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -29,6 +29,7 @@ export default function SignUp() {
             Cookies.set('token', token);
             Cookies.set('username', username);
             Cookies.set('email', email);
+            
             const checkSaveToken = Cookies.get('token');
                 if (checkSaveToken) {
                     console.log("C'est bien stocker dans les cookies", checkSaveToken);
@@ -72,8 +73,9 @@ export default function SignUp() {
                         autoComplete='none'
                     />
                 </div>
-                <button type='submit'>Confirmer</button>
+                <button type='submit' className='btn-confirm'>Confirmer</button>
             </form>
+            <button onClick={() => navigate('/login')} className='btn-login'> J'ai un compte </button>
         </div>
     );
 }

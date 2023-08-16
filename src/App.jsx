@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Profil from './components/Profil'
-import SignUp from './components/SignUp'
+import Register from './components/Register'
+import Login from './components/Login'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -16,7 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element= {<Home />} />
           <Route path='/profil' element= {<Profil />} />
-          <Route path='/signup' element= {<SignUp />} />
+          <Route path='/login' element= {<Login />} />
+          <Route path='/register' element= {<Register />} />
         </Routes>
         </main>
       </BrowserRouter>
